@@ -1,7 +1,3 @@
-const _ = require('lodash')
+const myChunk = require('test-vujson')
 
-function myChunk(arr) {
-  return _.chunk(arr, 2)
-}
-
-module.exports = myChunk
+console.log(myChunk([1, 2, 3, 4, 5, 6, 6]))

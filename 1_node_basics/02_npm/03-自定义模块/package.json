@@ -1,14 +1,19 @@
 {
-  "name": "test",
+  "name": "test-vujson",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./script/script.js",
+    "start": "node ./script/script01.js & node ./script/script02.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "test-vujson": "^1.0.0"
+  },
+  "config": {
+    "env": "production"
   }
 }
