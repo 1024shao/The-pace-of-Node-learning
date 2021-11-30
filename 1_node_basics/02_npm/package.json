@@ -1,0 +1,21 @@
+{
+  "name": "02_npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "jquery": "^3.0.0",
+    "understore": "^2.1.6"
+  }
+}
