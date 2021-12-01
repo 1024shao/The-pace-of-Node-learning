@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1024shao/The-pace-of-Node-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1024shao/The-pace-of-Node-learning/issues"
+  },
+  "homepage": "https://github.com/1024shao/The-pace-of-Node-learning#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.11"
+  }
+}

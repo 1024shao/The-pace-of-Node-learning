@@ -1,8 +1,11 @@
-var http = require('http');
+const http = require('http');
+const fs = require('fs')
+let personList = null
+fs.readFile('./test.json', (err, data) => {
+  personList = data.toString()
+})
 http.createServer(function (request, response) {
-  response.writeHead(200, { 'Content-Type': 'text/plain' });
-  response.end('Hello World');
-  console.log(request.url)
+  response.end(`getData(${personList})`);
 }).listen(9090);
 
 console.log('Server running at http://127.0.0.1:9090/');

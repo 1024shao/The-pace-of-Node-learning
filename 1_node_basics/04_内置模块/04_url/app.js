@@ -1,0 +1,5 @@
+const url = require('url')
+const queryString = require('querystring')
+const result = url.parse('www.baidu.com?a=2&name=20')
+console.log(result)
+console.log(queryString.parse(result.query))
