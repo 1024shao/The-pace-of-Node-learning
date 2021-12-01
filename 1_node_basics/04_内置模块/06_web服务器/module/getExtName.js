@@ -1,14 +1,8 @@
-function getFileType(extname) {
-  switch (extname) {
-    case '.html':
-      return 'text/html'
-    case '.js':
-      return 'text/js'
-    case '.css':
-      return 'text/css'
-    default:
-      return 'text/html'
-  }
-}
+const fs = require('fs')
 
-module.exports = { getFileType }
+function getExtName(extname) {
+  const data = fs.readFileSync('./data/mime.json')
+  let result = JSON.parse(data.toString())
+  return result[extname]
+}
+module.exports = { getExtName }
